@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Users, Heart, DollarSign, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { Users, Heart, DollarSign, CheckCircle, Clock, MapPin, Building } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 const Volunteer: React.FC = () => {
@@ -65,7 +65,7 @@ const Volunteer: React.FC = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#FAEC78' }} className="min-h-screen">
+    <div style={{ backgroundColor: '#F5F5DC' }} className="min-h-screen">
       {/* Header Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -88,13 +88,13 @@ const Volunteer: React.FC = () => {
               <div className="flex space-x-3">
                 <Link
                   to="/volunteer/login"
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                  className="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
                 >
                   Login
                 </Link>
                 <Link
                   to="/volunteer/signup"
-                  className="bg-green-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors"
+                  className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors"
                 >
                   Sign Up
                 </Link>
@@ -135,13 +135,13 @@ const Volunteer: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Link
                   to="/volunteer/login"
-                  className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg text-center hover:bg-blue-700 transition-colors"
+                  className="w-full sm:w-auto bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold text-lg text-center hover:bg-indigo-700 transition-colors"
                 >
                   Sign In
                 </Link>
                 <Link
                   to="/volunteer/signup"
-                  className="w-full sm:w-auto bg-green-600 text-white px-8 py-4 rounded-xl font-semibold text-lg text-center hover:bg-green-700 transition-colors"
+                  className="w-full sm:w-auto bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold text-lg text-center hover:bg-emerald-700 transition-colors"
                 >
                   Sign Up
                 </Link>
@@ -170,7 +170,7 @@ const Volunteer: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
             <button
               onClick={() => setShowTasks(true)}
-              className="btn-primary inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+              className="btn-primary inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
             >
               <Users className="w-6 h-6 mr-3" />
               Help with Ground Services
@@ -181,6 +181,13 @@ const Volunteer: React.FC = () => {
             >
               <DollarSign className="w-6 h-6 mr-3" />
               Help by Funding
+            </Link>
+            <Link
+              to="/ngo-directory"
+              className="btn-secondary inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+            >
+              <Building className="w-6 h-6 mr-3" />
+              NGO Directory
             </Link>
           </div>
         )}

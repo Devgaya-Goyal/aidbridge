@@ -39,7 +39,7 @@ const HelpRequest: React.FC = () => {
 
   if (submitted) {
     return (
-      <div style={{ backgroundColor: '#FF6D74' }} className="min-h-screen py-16">
+      <div style={{ backgroundColor: '#800000' }} className="min-h-screen py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Success Message */}
           <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8 text-center">
@@ -111,7 +111,7 @@ const HelpRequest: React.FC = () => {
   }
 
   return (
-    <div style={{ backgroundColor: '#FF6D74' }} className="min-h-screen py-16">
+    <div style={{ backgroundColor: '#800000' }} className="min-h-screen py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Emergency Notice */}
         <div className="emergency-box bg-red-100 border-2 border-red-300 rounded-xl p-6 mb-8 text-center">

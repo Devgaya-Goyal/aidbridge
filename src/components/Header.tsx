@@ -55,16 +55,6 @@ const Header: React.FC = () => {
               Volunteer
             </Link>
             <Link
-              to="/ngo-directory"
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive('/ngo-directory') 
-                  ? 'text-purple-600 bg-purple-50' 
-                  : 'text-gray-700 hover:text-purple-600'
-              }`}
-            >
-              NGOs
-            </Link>
-            <Link
               to="/ngo-login"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/ngo-login') 
@@ -72,7 +62,7 @@ const Header: React.FC = () => {
                   : 'text-gray-700 hover:text-orange-600'
               }`}
             >
-              NGO Login
+              NGO
             </Link>
           </nav>
 

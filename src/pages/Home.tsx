@@ -5,7 +5,7 @@ import Chatbot from '../components/Chatbot';
 
 const Home: React.FC = () => {
   return (
-    <div style={{ backgroundColor: '#00FF8F' }} className="min-h-screen">
+    <div style={{ backgroundColor: '#2F4F4F' }} className="min-h-screen">
       <Chatbot />
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
